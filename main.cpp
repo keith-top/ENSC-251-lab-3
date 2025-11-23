@@ -87,7 +87,7 @@ int main() {
     cout << "=== Interactive session for bst4 ===" << endl;
     bool keepRunning = true;
     while (keepRunning) {
-        cout << endl; << "Menu:" << endl;
+        cout << endl << "Menu:" << endl
              << "1) Search a key in bst4" << endl
              << "2) Search the successor of a key in bst4" << endl
              << "3) Insert a key into bst4" << endl
@@ -123,7 +123,7 @@ int main() {
             }
             case 4: {
                 int k = getIntFromUser("Enter key to delete: ");
-                if (bst4.deleteNode(k)) cout << "Deleted " << k << " from bst4 (if existed)." << endl;;
+                if (bst4.deleteNode(k)) cout << "Deleted " << k << " from bst4 (if existed)." << endl;
                 else cout << "Delete failed for key " << k << endl;
                 break;
             }
