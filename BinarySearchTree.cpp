@@ -172,6 +172,7 @@ NodePtr BinarySearchTree::searchSuccessor(int key) const{
         parent = parent->parent;
     }
     if(parent == nullptr){
+        cout << "Error: " << key << "is not in the current BST or the largest in the current BST" << endl;
         cout << "Key " << key << " is the root" << endl;
         return nullptr; //no successor
     }
